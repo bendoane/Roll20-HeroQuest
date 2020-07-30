@@ -1,0 +1,284 @@
+<div class="sheet-background" style="position: relative; height: 1000px; width: 800px; top:0px; left: 0%;">
+    <!--name and class-->
+    <div class="sheet-name" style="position: absolute; top: 135px; left: 285px;">
+        <input type="text" name="attr_character_name" style="width: 250px;" />
+    </div>
+    <div class="sheet-class" style="position: absolute; top: 170px; left: 335px;">
+            <input type="text" name="attr_class" style="width: 200px;"/>
+    </div>
+    
+    
+    <!--Stats-->
+    <div class="sheet-row current-stats">
+        <div class="sheet-col" style="position: absolute; top: 290px; left: 135px;">
+            <input type="number" name="attr_attack" style="width: 55px; font-size: 32px;"></input>
+        </div>
+        <div class="sheet-col" style="position: absolute; top: 290px; left: 280px;">
+            <input type="number" name="attr_defend" style="width: 55px; font-size: 32px;" />
+        </div>
+        <div class="sheet-col" style="position: absolute; top: 290px; left: 430px;">
+            <input type="number"name="attr_body" style="width: 55px; font-size: 32px;" />
+        </div>
+        <div class="sheet-col" style="position: absolute; top: 290px; left: 580px;">
+            <input type="number"name="attr_mind" style="width: 55px; font-size: 32px;" />
+        </div>
+    </div>
+    <div class="sheet-row base-stats">
+        <div class="sheet-col" style="position: absolute; top: 340px; left: 125px; font-size: 16px;">
+            Base: 
+            <input type="number" name="attr_attack_base" style="width: 40px; font-size: 20px;"/>
+        </div>
+        <div class="sheet-col" style="position: absolute; top: 340px; left: 270px; font-size: 16px;">
+            Base: 
+            <input type="number" name="attr_defend_base" style="width: 40px; font-size: 20px;"/>
+        </div>
+        <div class="sheet-col" style="position: absolute; top: 340px; left: 420px; font-size: 16px;">
+            Base: 
+            <input type="number" name="attr_body_max" style="width: 40px; font-size: 20px;"/>
+        </div>
+        <div class="sheet-col" style="position: absolute; top: 340px; left: 570px; font-size: 16px;">
+            Base: 
+            <input type="number" name="attr_mind_max" style="width: 40px; font-size: 20px;"/>
+        </div>
+    </div>
+
+    <!--equipment-->
+    <div class="sheet-col">
+        <div class="sheet-row.equipment" style="position: absolute; top: 490px; left: 60px; width: 410px;" >
+            <input type="text"  name="attr_head_armor" data-i18n-placeholder="Head" style="width: 190px;" />
+            <input type="number" name="attr_head" style="width: 40px; font-size: 16px;"/>
+            <select name="attr_head_stat_type" style="width: 65px;">
+                <option value=""></option>
+                <option value="Att">Att</option>
+                <option value="Def">Def</option>
+                <option value="Body">Body</option>
+                <option value="Mind">Mind</option>
+            </select>
+        </div>
+        <div class="sheet-row.equipment" style="position: absolute; top: 525px; left: 60px; width: 410px;" >
+            <input type="text" name="attr_necklace_typ" data-i18n-placeholder="Necklace" style="width: 190px;"/>
+            <input type="number" name="attr_necklace" style="width: 40px; font-size: 16px;"/>
+            <select name="attr_necklace_stat_type" style="width: 65px;">
+                <option value=""></option>
+                <option value="Att">Att</option>
+                <option value="Def">Def</option>
+                <option value="Body">Body</option>
+                <option value="Mind">Mind</option>
+            </select>
+        </div>
+        <div class="sheet-row.equipment" style="position: absolute; top: 560px; left: 60px; width: 410px;" >
+            <input type="text" name="attr_chest_type" data-i18n-placeholder="Chest" style="width: 190px;"/>
+            <input type="number" name="attr_chest" style="width: 40px; font-size: 16px;"/>
+            <select name="attr_chest_stat_type" style="width: 65px;">
+                <option value=""></option>
+                <option value="Att">Att</option>
+                <option value="Def">Def</option>
+                <option value="Body">Body</option>
+                <option value="Mind">Mind</option>
+            </select>
+        </div>
+        <div class="sheet-row.equipment" style="position: absolute; top: 595px; left: 60px; width: 410px;" >
+            <input type="text" name="attr_right_weapon" data-i18n-placeholder="Right Hand" style="width: 190px;"/>
+            <input type="number" name="attr_right" style="width: 40px; font-size: 16px;"/>
+            <select name="attr_right_stat_type" style="width: 65px;">
+                <option value=""></option>
+                <option value="Att">Att</option>
+                <option value="Def">Def</option>
+                <option value="Body">Body</option>
+                <option value="Mind">Mind</option>
+            </select>
+        </div>
+        <div class="sheet-row.equipment" style="position: absolute; top: 630px; left: 60px; width: 410px;" >
+            <input type="text" name="attr_left_weapon" data-i18n-placeholder="Left Hand" style="width: 190px;"/>
+            <input type="number" name="attr_left" style="width: 40px; font-size: 16px;"/>
+            <select name="attr_left_stat_type" style="width: 65px;">
+                <option value=""></option>
+                <option value="Att">Att</option>
+                <option value="Def">Def</option>
+                <option value="Body">Body</option>
+                <option value="Mind">Mind</option>
+            </select>
+        </div>
+        <div class="sheet-row.equipment" style="position: absolute; top: 665px; left: 60px; width: 410px;" >
+            <input type="text" name="attr_ring_type" data-i18n-placeholder="Ring" style="width: 190px;"/>
+            <input type="number" name="attr_ring" style="width: 40px; font-size: 16px;"/>
+            <select name="attr_ring_stat_type" style="width: 65px;">
+                <option value=""></option>
+                <option value="Att">Att</option>
+                <option value="Def">Def</option>
+                <option value="Body">Body</option>
+                <option value="Mind">Mind</option>
+            </select>
+        </div>
+        <div class="sheet-row.equipment" style="position: absolute; top: 700px; left: 60px; width: 410px;" >
+            <input type="text" name="attr_belt_type" data-i18n-placeholder="Belt" style="width: 190px;"/>
+            <input type="number" name="attr_belt" style="width: 40px; font-size: 16px;"/>
+            <select name="attr_belt_stat_type" style="width: 65px;">
+                <option value=""></option>
+                <option value="Att">Att</option>
+                <option value="Def">Def</option>
+                <option value="Body">Body</option>
+                <option value="Mind">Mind</option>
+            </select>
+        </div>
+        <div class="sheet-row.equipment" style="position: absolute; top: 735px; left: 60px; width: 410px;" >
+            <input type="text" name="attr_leg_type" data-i18n-placeholder="Legs" style="width: 190px;"/>
+            <input type="number" name="attr_legs" style="width: 40px; font-size: 16px;"/>
+            <select name="attr_leg_stat_type" style="width: 65px;">
+                <option value=""></option>
+                <option value="Att">Att</option>
+                <option value="Def">Def</option>
+                <option value="Body">Body</option>
+                <option value="Mind">Mind</option>
+            </select>
+        </div>
+        <div class="sheet-row.equipment" style="position: absolute; top: 770px; left: 60px; width: 410px;" >
+            <input type="text" name="attr_footwear_type" data-i18n-placeholder="Footwear" style="width: 190px;"/>
+            <input type="number" name="attr_footwear" style="width: 40px; font-size: 16px;"/>
+            <select name="attr_footwear_stat_type" style="width: 65px;">
+                <option value=""></option>
+                <option value="Att">Att</option>
+                <option value="Def">Def</option>
+                <option value="Body">Body</option>
+                <option value="Mind">Mind</option>
+            </select>
+        </div>
+    </div>
+    
+    <!--Potions and Misc.-->
+    <div class="sheet-misc" style="position: absolute; top: 490px; left: 410px;">
+        <textarea name="attr_potions_and_misc" style="width: 300px; height: 200px;"></textarea>
+    </div>
+
+    <!--Gold-->
+    <div class="sheet-col" style="position: absolute; width: 240px; top: 795px; left: 610px;">
+        <input type="number" name="attr_treasure" style="width: 85px; font-size: 24px;"/>
+      </div>
+
+    <!--move-->
+    <div class="sheet-row.move" style="position: absolute; top: 915px; left: 690px;">
+       <input type="number" name="attr_move" style="width: 55px; font-size: 24px;"/>
+       <button type='roll' value='/roll @{move}d6 + ?{Other|0}' name='roll_move' />
+    </div>
+</div>
+
+<!-- This is disgusting code, but it's how Roll20 sheetworkers are set up. 
+I would love for this to NOT look like this. -->
+<script type="text/worker">
+on(
+    "change:head " + 
+    "change:head_stat_type " +
+    "change:necklace " +
+    "change:necklace_stat_type " +
+    "change:chest " +
+    "change:chest_stat_type " +
+    "change:right " +
+    "change:right_stat_type " +
+    "change:left " +
+    "change:left_stat_type " +
+    "change:ring " +
+    "change:ring_stat_type " +
+    "change:belt " +
+    "change:belt_stat_type " +
+    "change:legs " +
+    "change:legs_stat_type " +
+    "change:footwear " +
+    "change:footwear_stat_type " +
+    "change:defend_base " +
+    "change:defend " +
+    "change:attack_base " +
+    "change:body_max " +
+    "change:mind_max " +
+    "sheet:opened", function(){
+        getAttrs([
+            "head",
+            "head_stat_type",
+            "necklace",
+            "necklace_stat_type",
+            "chest",
+            "chest_stat_type",
+            "right",
+            "right_stat_type",
+            "left",
+            "left_stat_type",
+            "ring",
+            "ring_stat_type",
+            "belt",
+            "belt_stat_type",
+            "legs",
+            "legs_stat_type",
+            "footwear",
+            "footwear_stat_type",
+            "attack_base",
+            "defend_base",
+            "defend",
+            "body_max",
+            "mind_max"
+            ], function(object) {
+                let head_stat_type = object.head_stat_type
+                let necklace_stat_type = object.necklace_stat_type
+                let chest_stat_type = object.chest_stat_type
+                let right_stat_type = object.right_stat_type
+                let left_stat_type = object.left_stat_type
+                let ring_stat_type = object.ring_stat_type
+                let belt_stat_type = object.belt_stat_type
+                let legs_stat_type = object.legs_stat_type
+                let footwear_stat_type = object.footwear_stat_type
+
+                let head = parseInt(object.head) || 0;
+                let necklace = parseInt(object.necklace) || 0;
+                let chest = parseInt(object.chest) || 0;
+                let right = parseInt(object.right) || 0;
+                let left = parseInt(object.left) || 0;
+                let ring = parseInt(object.ring) || 0;
+                let belt = parseInt(object.belt) || 0;
+                let legs = parseInt(object.legs) || 0;
+                let footwear = parseInt(object.footwear) || 0;
+
+                let attack_base = parseInt(object.attack_base) || 0;
+                let new_attack = attack_base;
+                let defend_base = parseInt(object.defend_base) || 0;
+                let new_defend = defend_base;
+                let body_base = parseInt(object.body_max) || 0;
+                let new_body = body_base
+                let mind_base = parseInt(object.mind_max) || 0;
+                let new_mind = mind_base
+                
+                function addStatTypes(stat_type, equipment){
+                    if (stat_type == "Att"){
+                        if (new_attack == attack_base){
+                            new_attack = equipment
+                        } else {
+                            new_attack = new_attack + equipment
+                        }
+                    }
+                    if (stat_type == "Def"){
+                        new_defend = new_defend + equipment
+                    }
+                    if (stat_type == "Body"){
+                        new_body = new_body + equipment
+                    }
+                    if (stat_type == "Mind"){
+                        new_mind = new_mind + equipment
+                    }
+                }
+                addStatTypes(head_stat_type, head)
+                addStatTypes(necklace_stat_type, necklace)
+                addStatTypes(chest_stat_type, chest)
+                addStatTypes(right_stat_type, right)
+                addStatTypes(left_stat_type, left)
+                addStatTypes(ring_stat_type, ring)
+                addStatTypes(belt_stat_type, belt)
+                addStatTypes(legs_stat_type, legs)
+                addStatTypes(footwear_stat_type, footwear)
+
+                setAttrs({    
+                    attack: new_attack,                 
+                    defend: new_defend,
+                    body: new_body,
+                    mind: new_mind
+                });
+        });
+    }
+);
+</script>
