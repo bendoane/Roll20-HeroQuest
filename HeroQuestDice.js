@@ -131,7 +131,7 @@ function rollHQDice(rollDiceQty, characterType, who) {
   function skullOutput(diceColor) {
     diceResult.diceGraphicsLog =
       diceResult.diceGraphicsLog +
-      graphicsHTMLBuilder(diceColor.SKULL, "SKull");
+      graphicsHTMLBuilder(diceColor.SKULL, "Skull");
     diceResult.skull = diceResult.skull + 1;
   }
 
